@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/activity_demo.xml" value="0.24954710144927536" />
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/base_layout.xml" value="0.358695652173913" />
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/fragment_demo.xml" value="0.24954710144927536" />
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/fragment_image_search.xml" value="0.358695652173913" />
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/image_row.xml" value="0.358695652173913" />
+        <entry key="..\:/valU/valU_sales/valU-Sales/valU-Sales/app/src/main/res/layout/item_search.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

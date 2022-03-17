@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height">
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/img_height"
+        android:layout_weight="1"
+        android:contentDescription="@string/cd_image_poster"
+        android:padding="@dimen/standard_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_discount" />
+
+    <TextView
+        android:id="@+id/txt_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:textColor="@android:color/darker_gray"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_poster" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_brand" />
+
+    <TextView
+        android:id="@+id/txt_discount"
+        android:layout_width="@dimen/txt_width"
+        android:layout_height="@dimen/txt_width"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:numStars="5"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_old_price_label" />
+
+    <TextView
+        android:id="@+id/txt_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_price_label"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+    <TextView
+        android:id="@+id/txt_old_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_price_label" />
+
+    <TextView
+        android:id="@+id/txt_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:ellipsize="end"
+        android:textColor="@android:color/darker_gray"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_old_price_label"
+        app:layout_constraintTop_toBottomOf="@+id/txt_price_label" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_view_width"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_old_price_label"
+        app:layout_constraintEnd_toEndOf="@id/txt_old_price"
+        app:layout_constraintStart_toStartOf="@+id/txt_old_price_label"
+        app:layout_constraintTop_toTopOf="@+id/txt_old_price_label" />
+
+    <View
+        android:layout_width="@dimen/line_view_width"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_view_width"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

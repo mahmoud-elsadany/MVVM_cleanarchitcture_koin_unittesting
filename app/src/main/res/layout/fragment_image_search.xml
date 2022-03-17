@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/image_search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Image"
+        android:inputType="textPersonName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/image_search_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/image_search_et"
+        tools:itemCount="3"
+        tools:listitem="@layout/image_row" />
+
+
+
+    <include
+        android:id="@+id/image_search_base_layout"
+        layout="@layout/base_layout" />
+</RelativeLayout>
